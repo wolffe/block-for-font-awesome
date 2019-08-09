@@ -65,7 +65,6 @@ function getbutterfly_fa_block_render($atts) {
  */
 function getbutterfly_fa_block_init() {
     function getbutterfly_fa_render($attributes, $content) {
-		// $align = trim($attributes{'faAlign'});
 		$class = trim($attributes{'faClass'});
 		$color = trim($attributes{'faColor'});
 
@@ -80,12 +79,6 @@ function getbutterfly_fa_block_init() {
     register_block_type('getbutterfly/font-awesome', [
         'render_callback' => 'getbutterfly_fa_render',
         'attributes' => [
-            /**
-            'faAlign' => [
-                'type' => 'string',
-                'default' => '',
-            ],
-            /**/
             'faClass' => [
                 'type' => 'string',
                 'default' => '',

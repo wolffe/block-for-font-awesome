@@ -33,9 +33,10 @@ if (!function_exists('add_filter')) {
 }
 
 function getbutterfly_fa_enqueue() {
-    wp_enqueue_script('fa5', 'https://use.fontawesome.com/releases/v5.9.0/js/all.js', [], '5.9.0', true);
+    wp_enqueue_script('fa5', 'https://use.fontawesome.com/releases/v5.10.1/js/all.js', [], '5.10.1', true);
 }
 add_action('wp_enqueue_scripts', 'getbutterfly_fa_enqueue');
+add_action('admin_enqueue_scripts', 'getbutterfly_fa_enqueue');
 
 require_once 'block/index.php';
 

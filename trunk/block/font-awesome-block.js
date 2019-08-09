@@ -7,7 +7,6 @@
     var ServerSideRender = wp.components.ServerSideRender;
     var ToggleControl = wp.components.ToggleControl;
     var ColorPalette = wp.components.ColorPalette;
-    // var SelectControl = wp.components.SelectControl;
 
     registerBlockType('getbutterfly/font-awesome', {
         title: 'Font Awesome Icon',
@@ -15,12 +14,6 @@
         icon: 'star-filled',
         category: 'getbutterfly',
         attributes: {
-            /**
-            faAlign: {
-                type: 'string',
-                default: '',
-            },
-            /**/
             faClass: {
                 type: 'string',
                 default: '',
@@ -38,7 +31,6 @@
         edit: function (props) {
             var attributes = props.attributes;
 
-            // var faAlign = attributes.faAlign;
             var faClass = attributes.faClass;
             var faColor = attributes.faColor;
             var fixedWidth = attributes.fixedWidth;
@@ -47,8 +39,8 @@
                 el(InspectorControls, { key: 'inspector' },
                     el(
                         components.PanelBody, {
-                            title: 'Slider Settings',
-                            className: 'supernova_block',
+                            title: 'Icon Settings',
+                            className: 'getbutterfly_block',
                             initialOpen: true,
                         },
 
@@ -78,29 +70,6 @@
                                 props.setAttributes({ faColor: new_faColor });
                             },
                         }),
-                        /**
-                        el(SelectControl, {
-                            label: 'Icon Alignment',
-                            value: faAlign,
-                            options: [
-                                {
-                                    value: 'left',
-                                    label: 'Left'
-                                },
-                                {
-                                    value: 'center',
-                                    label: 'Center'
-                                },
-                                {
-                                    value: 'right',
-                                    label: 'Right'
-                                }
-                            ],
-                            onChange: function (new_faAlign) {
-                                props.setAttributes({ faAlign: new_faAlign });
-                            },
-                        }),
-                        /**/
                     ),
                 ),
                 el(ServerSideRender, {
