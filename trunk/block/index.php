@@ -6,7 +6,7 @@
  *
  * @param  array  $categories Current block categories
  * @param  object $post       Post object
- * @return null
+ * @return array
  */
 function getbutterfly_block_categories($categories, $post) {
     return array_merge(

@@ -4,7 +4,7 @@ Tags: gutenberg, block, font, icon, editor, fontawesome, fa
 Requires at least: 5.2
 Tested up to: 5.2.2
 Requires PHP: 7.0.0
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -23,6 +23,10 @@ You can also display inline icons by using the `[fa class="fas fa-fw fa-phone"]`
 3. Add a Font Awesome Icon block
 
 == Changelog ==
+
+= 1.1.1 =
+* FIX: Fixed SVN import
+* UPDATE: Updated plugin assets
 
 = 1.1.0 =
 * FIX: Enqueued Font Awesome 5 in admin section (do not depend on other themes and plugins)

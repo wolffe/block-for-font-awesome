@@ -1,3 +1,6 @@
+/**
+ * Register editor block
+ */
 (function(editor, components, i18n, element) {
     var el = element.createElement;
     var registerBlockType = wp.blocks.registerBlockType;
