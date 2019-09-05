@@ -2,7 +2,7 @@
 Contributors: butterflymedia
 Tags: gutenberg, block, font, icon, editor, fontawesome, fa
 Requires at least: 5.2
-Tested up to: 5.2.2
+Tested up to: 5.2.3
 Requires PHP: 7.0.0
 Stable tag: 1.1.3
 License: GPLv3
